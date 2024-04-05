@@ -29,12 +29,12 @@ namespace FunctionBasedEventExample
             // Perform the necessary logic when the event is raised
             // For example, updating UI elements, fetching data asynchronously, etc.
             await Task.Delay(1000); // Simulate some asynchronous operation
-            MessageBox.Show("collection changed event fired!");
+            MessageBox.Show("event changed fired!");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            eventHandler.TriggerCollectionChanged();
+            eventHandler.TriggerEventChanged();
         }
     }
 }

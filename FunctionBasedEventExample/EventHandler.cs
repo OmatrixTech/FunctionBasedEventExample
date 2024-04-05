@@ -12,12 +12,12 @@ namespace FunctionBasedEventExample
         public event Func<Task> FunctionEvent;
 
         // Method to raise the event
-        public async Task TriggerCollectionChanged()
+        public async Task TriggerEventChanged()
         {
-            Func<Task> pFeedSourceEcosystemsCollectionChanged = FunctionEvent;
-            if (pFeedSourceEcosystemsCollectionChanged != null)
+            Func<Task> pEventChanged = FunctionEvent;
+            if (pEventChanged != null)
             {
-                await pFeedSourceEcosystemsCollectionChanged();
+                await pEventChanged();
             }
         }
     }
